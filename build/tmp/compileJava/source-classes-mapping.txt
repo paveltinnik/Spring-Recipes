@@ -1,0 +1,24 @@
+com/paveltinnik/recipes/security/CustomUserDetailsService.java
+ com.paveltinnik.recipes.security.CustomUserDetailsService
+com/paveltinnik/recipes/RecipesApplication.java
+ com.paveltinnik.recipes.RecipesApplication
+com/paveltinnik/recipes/accessingdatajpa/MyUserRepository.java
+ com.paveltinnik.recipes.accessingdatajpa.MyUserRepository
+com/paveltinnik/recipes/models/MyUser.java
+ com.paveltinnik.recipes.models.MyUser
+com/paveltinnik/recipes/models/Recipe.java
+ com.paveltinnik.recipes.models.Recipe
+com/paveltinnik/recipes/accessingdatajpa/MyUserServiceImpl.java
+ com.paveltinnik.recipes.accessingdatajpa.MyUserServiceImpl
+com/paveltinnik/recipes/security/SecurityConfig.java
+ com.paveltinnik.recipes.security.SecurityConfig
+com/paveltinnik/recipes/accessingdatajpa/RecipeService.java
+ com.paveltinnik.recipes.accessingdatajpa.RecipeService
+com/paveltinnik/recipes/accessingdatajpa/RecipeRepository.java
+ com.paveltinnik.recipes.accessingdatajpa.RecipeRepository
+com/paveltinnik/recipes/controllers/RecipesController.java
+ com.paveltinnik.recipes.controllers.RecipesController
+com/paveltinnik/recipes/security/AuthenticationFacade.java
+ com.paveltinnik.recipes.security.AuthenticationFacade
+com/paveltinnik/recipes/security/IAuthenticationFacade.java
+ com.paveltinnik.recipes.security.IAuthenticationFacade

@@ -1,0 +1,3 @@
+com/paveltinnik/recipes/RecipesApplicationTests.java
+ com.paveltinnik.recipes.RecipesApplicationTests
+ com.paveltinnik.recipes.RecipesApplicationTests$Recipe
