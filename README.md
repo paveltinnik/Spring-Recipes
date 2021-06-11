@@ -26,7 +26,7 @@ An urge to cook something special is too hard to resist sometimes. But what if y
 ### Status code: 200 (Ok)
 
 Further POST /api/recipe/new request with basic authentication; email (login): Cook_Programmer@somewhere.com, and password: RecipeInBinary
-
+```json
 {
    "name": "Mint Tea",
    "category": "beverage",
@@ -34,13 +34,15 @@ Further POST /api/recipe/new request with basic authentication; email (login): C
    "ingredients": ["boiled water", "honey", "fresh mint leaves"],
    "directions": ["Boil water", "Pour boiling hot water into a mug", "Add fresh mint leaves", "Mix and let the mint leaves seep for 3-5 minutes", "Add honey and mix again"]
 }
+```
 Response:
-
+```jsoon
 {
    "id": 1
 }
+```
 Further PUT /api/recipe/1 request with basic authentication; email (login): Cook_Programmer@somewhere.com, password: RecipeInBinary
-
+```json
 {
    "name": "Fresh Mint Tea",
    "category": "beverage",
@@ -48,12 +50,13 @@ Further PUT /api/recipe/1 request with basic authentication; email (login): Cook
    "ingredients": ["boiled water", "honey", "fresh mint leaves"],
    "directions": ["Boil water", "Pour boiling hot water into a mug", "Add fresh mint leaves", "Mix and let the mint leaves seep for 3-5 minutes", "Add honey and mix again"]
 }
+```
 Status code: 204 (No Content)
 
 Further GET /api/recipe/1 request with basic authentication; email (login): Cook_Programmer@somewhere.com, password: RecipeInBinary
 
 Response:
-
+```json
 {
    "name": "Fresh Mint Tea",
    "category": "beverage",
@@ -62,12 +65,14 @@ Response:
    "ingredients": ["boiled water", "honey", "fresh mint leaves"],
    "directions": ["Boil water", "Pour boiling hot water into a mug", "Add fresh mint leaves", "Mix and let the mint leaves seep for 3-5 minutes", "Add honey and mix again"]
 }
+```
 Example 3: POST /api/register request without authentication
-
+```json
 {
    "email": "CamelCaseRecipe@somewhere.com",
    "password": "C00k1es."
 }
+```
 Status code: 200 (Ok)
 
 Further response for the GET /api/recipe/1 request with basic authentication; email (login): CamelCaseRecipe@somewhere.com, password: C00k1es.
