@@ -4,8 +4,7 @@ An urge to cook something special is too hard to resist sometimes. But what if y
 
 ## Examples
 Example 1: `POST /api/recipe/new` request without authentication
-
-```html
+```json
 {
    "name": "Fresh Mint Tea",
    "category": "beverage",
@@ -37,7 +36,7 @@ Further `POST /api/recipe/new` request with basic authentication; email (login):
 }
 ```
 Response:
-```jsoon
+```json
 {
    "id": 1
 }
