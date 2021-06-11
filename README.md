@@ -14,18 +14,18 @@ Example 1: ___`POST /api/recipe/new` request without authentication___
 }
 ```
 
-Status code: `401 (Unauthorized)`
+___Status code: `401 (Unauthorized)`___
 
-Example 2: `POST /api/register` request without authentication
+Example 2: ___`POST /api/register` request without authentication___
 ```json
 {
    "email": "Cook_Programmer@somewhere.com",
    "password": "RecipeInBinary"
 }
 ```
-Status code: `200 (Ok)`
+___Status code: `200 (Ok)`___
 
-Further `POST /api/recipe/new` request with basic authentication; email (login): Cook_Programmer@somewhere.com, and password: RecipeInBinary
+___Further `POST /api/recipe/new` request with basic authentication; email (login): Cook_Programmer@somewhere.com, and password: RecipeInBinary___
 ```json
 {
    "name": "Mint Tea",
@@ -35,13 +35,13 @@ Further `POST /api/recipe/new` request with basic authentication; email (login):
    "directions": ["Boil water", "Pour boiling hot water into a mug", "Add fresh mint leaves", "Mix and let the mint leaves seep for 3-5 minutes", "Add honey and mix again"]
 }
 ```
-Response:
+___Response:___
 ```json
 {
    "id": 1
 }
 ```
-Further `PUT /api/recipe/1` request with basic authentication; email (login): Cook_Programmer@somewhere.com, password: RecipeInBinary
+___Further `PUT /api/recipe/1` request with basic authentication; email (login): Cook_Programmer@somewhere.com, password: RecipeInBinary___
 ```json
 {
    "name": "Fresh Mint Tea",
@@ -51,11 +51,11 @@ Further `PUT /api/recipe/1` request with basic authentication; email (login): Co
    "directions": ["Boil water", "Pour boiling hot water into a mug", "Add fresh mint leaves", "Mix and let the mint leaves seep for 3-5 minutes", "Add honey and mix again"]
 }
 ```
-Status code: `204 (No Content)`
+___Status code: `204 (No Content)`___
 
-Further `GET /api/recipe/1` request with basic authentication; email (login): Cook_Programmer@somewhere.com, password: RecipeInBinary
+___Further `GET /api/recipe/1` request with basic authentication; email (login): Cook_Programmer@somewhere.com, password: RecipeInBinary___
 
-Response:
+___Response:___
 ```json
 {
    "name": "Fresh Mint Tea",
@@ -66,16 +66,16 @@ Response:
    "directions": ["Boil water", "Pour boiling hot water into a mug", "Add fresh mint leaves", "Mix and let the mint leaves seep for 3-5 minutes", "Add honey and mix again"]
 }
 ```
-Example 3: `POST /api/register` request without authentication
+Example 3: ___`POST /api/register` request without authentication___
 ```json
 {
    "email": "CamelCaseRecipe@somewhere.com",
    "password": "C00k1es."
 }
 ```
-Status code: 200 (Ok)
+___Status code: 200 (Ok)___
 
-Further response for the `GET /api/recipe/1` request with basic authentication; email (login): CamelCaseRecipe@somewhere.com, password: C00k1es.
+___Further response for the `GET /api/recipe/1` request with basic authentication; email (login): CamelCaseRecipe@somewhere.com, password: C00k1es.___
 ```json
 {
    "name": "Fresh Mint Tea",
@@ -86,7 +86,7 @@ Further response for the `GET /api/recipe/1` request with basic authentication; 
    "directions": ["Boil water", "Pour boiling hot water into a mug", "Add fresh mint leaves", "Mix and let the mint leaves seep for 3-5 minutes", "Add honey and mix again"]
 }
 ```
-Further `PUT /api/recipe/1` request with basic authentication; email (login): CamelCaseRecipe@somewhere.com, password: C00k1es.
+___Further `PUT /api/recipe/1` request with basic authentication; email (login): CamelCaseRecipe@somewhere.com, password: C00k1es.___
 ```json
 {
    "name": "Warming Ginger Tea",
@@ -96,8 +96,8 @@ Further `PUT /api/recipe/1` request with basic authentication; email (login): Ca
    "directions": ["Place all ingredients in a mug and fill with warm water (not too hot so you keep the beneficial honey compounds in tact)", "Steep for 5-10 minutes", "Drink and enjoy"]
 }
 ```
-Status code: `403 (Forbidden)`
+___Status code: `403 (Forbidden)`___
 
-Further `DELETE /api/recipe/1` request with basic authentication; email (login): CamelCaseRecipe@somewhere.com, password: C00k1es.
+___Further `DELETE /api/recipe/1` request with basic authentication; email (login): CamelCaseRecipe@somewhere.com, password: C00k1es.___
 
-Status code: `403 (Forbidden)`
+___Status code: `403 (Forbidden)`___
