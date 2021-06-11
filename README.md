@@ -5,7 +5,7 @@ An urge to cook something special is too hard to resist sometimes. But what if y
 ## Examples
 Example 1: `POST /api/recipe/new` request without authentication
 
-```json
+```java
 {
    "name": "Fresh Mint Tea",
    "category": "beverage",
