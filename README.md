@@ -5,6 +5,7 @@ An urge to cook something special is too hard to resist sometimes. But what if y
 ## Examples
 ### Example 1: `POST /api/recipe/new` request without authentication
 
+```json
 {
    "name": "Fresh Mint Tea",
    "category": "beverage",
@@ -12,6 +13,8 @@ An urge to cook something special is too hard to resist sometimes. But what if y
    "ingredients": ["boiled water", "honey", "fresh mint leaves"],
    "directions": ["Boil water", "Pour boiling hot water into a mug", "Add fresh mint leaves", "Mix and let the mint leaves seep for 3-5 minutes", "Add honey and mix again"]
 }
+```
+
 ### Status code: 401 (Unauthorized)
 
 ### Example 2: POST /api/register request without authentication
